@@ -13,4 +13,5 @@ class all {
   include scala
   include terminator
   include vagrant
+  include vim
 }
