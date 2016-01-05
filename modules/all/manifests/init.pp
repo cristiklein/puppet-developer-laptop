@@ -12,6 +12,7 @@ class all {
   include mc
   include nvidia-blob
   include scala
+  include ssh-server
   include terminator
   include vagrant
   include vim
