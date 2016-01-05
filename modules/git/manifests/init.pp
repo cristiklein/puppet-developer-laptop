@@ -1,6 +1,6 @@
 class git {
   
-  package { ['git', 'git-gui', 'gitk']: 
+  package { ['git', 'git-gui', 'gitk', 'git-crypt']:
     ensure => 'installed'
   }
 
