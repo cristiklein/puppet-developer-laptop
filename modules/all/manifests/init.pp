@@ -14,6 +14,7 @@ class all {
   include passwordmaker
   include scala
   include ssh-server
+  include ssh-user-config
   include terminator
   include vagrant
   include vim
