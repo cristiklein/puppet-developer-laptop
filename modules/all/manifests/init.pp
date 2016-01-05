@@ -8,6 +8,7 @@ class all {
   include java
   include kupfer
   include maven
+  include nvidia-blob
   include scala
   include terminator
   include vagrant
