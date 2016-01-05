@@ -1,0 +1,7 @@
+[user]
+	email = cristiklein@gmail.com
+	name = Cristian Klein
+[push]
+	default = simple
+[alias]
+	wdiff = diff --color-words
