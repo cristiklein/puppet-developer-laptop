@@ -2,6 +2,7 @@
 class all {
 	
   include base
+  include chrome
   include conky
   include fish
   include git
