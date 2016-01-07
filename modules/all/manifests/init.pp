@@ -16,6 +16,7 @@ class all {
   include passwordmaker
   include scala
   include skype
+  include spotify
   include ssh-server
   include ssh-user-config
   include terminator
