@@ -14,6 +14,7 @@ class all {
   include nvidia-user-settings
   include passwordmaker
   include scala
+  include skype
   include ssh-server
   include ssh-user-config
   include terminator
