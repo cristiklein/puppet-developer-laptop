@@ -17,6 +17,7 @@ class all {
   include scala
   include skype
   include spotify
+  include spotify-user-config
   include ssh-server
   include ssh-user-config
   include terminator
