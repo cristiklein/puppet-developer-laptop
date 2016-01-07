@@ -10,6 +10,7 @@ class all {
   include kupfer
   include maven
   include mc
+  include mouse-user-config
   include nvidia-blob
   include nvidia-user-settings
   include passwordmaker
