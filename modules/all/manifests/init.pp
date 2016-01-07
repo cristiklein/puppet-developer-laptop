@@ -11,6 +11,7 @@ class all {
   include maven
   include mc
   include nvidia-blob
+  include nvidia-user-settings
   include passwordmaker
   include scala
   include ssh-server

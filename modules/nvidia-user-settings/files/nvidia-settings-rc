@@ -1,0 +1,43 @@
+#
+# /home/cklein/.nvidia-settings-rc
+#
+# Configuration file for nvidia-settings - the NVIDIA X Server Settings utility
+# Generated on Thu Jan  7 10:26:34 2016
+#
+
+# ConfigProperties:
+
+RcFileLocale = C
+ToolTips = Yes
+DisplayStatusBar = Yes
+SliderTextEntries = Yes
+IncludeDisplayNameInConfigFile = No
+ShowQuitDialog = No
+UpdateRulesOnProfileNameChange = Yes
+Timer = PowerMizer_Monitor_(GPU_1),Yes,1000
+Timer = Thermal_Monitor_(GPU_1),Yes,1000
+Timer = Memory_Used_(GPU_1),Yes,3000
+Timer = PowerMizer_Monitor_(GPU_0),Yes,1000
+Timer = Thermal_Monitor_(GPU_0),Yes,1000
+Timer = Memory_Used_(GPU_0),Yes,3000
+
+# Attributes:
+
+[DPY:DP-0]/RedBrightness=0.000000
+[DPY:DP-0]/GreenBrightness=0.000000
+[DPY:DP-0]/BlueBrightness=0.000000
+[DPY:DP-0]/RedContrast=0.000000
+[DPY:DP-0]/GreenContrast=0.000000
+[DPY:DP-0]/BlueContrast=0.000000
+[DPY:DP-0]/RedGamma=1.000000
+[DPY:DP-0]/GreenGamma=1.000000
+[DPY:DP-0]/BlueGamma=1.000000
+[DPY:DP-1]/RedBrightness=0.000000
+[DPY:DP-1]/GreenBrightness=0.000000
+[DPY:DP-1]/BlueBrightness=0.000000
+[DPY:DP-1]/RedContrast=0.000000
+[DPY:DP-1]/GreenContrast=0.000000
+[DPY:DP-1]/BlueContrast=0.000000
+[DPY:DP-1]/RedGamma=1.000000
+[DPY:DP-1]/GreenGamma=1.000000
+[DPY:DP-1]/BlueGamma=1.000000
