@@ -7,6 +7,7 @@ class all {
   include fish
   include git
   include java
+  include keyboard-user-config
   include kupfer
   include maven
   include mc
