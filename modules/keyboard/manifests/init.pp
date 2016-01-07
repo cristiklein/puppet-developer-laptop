@@ -1,6 +1,6 @@
-class keyboard-user-config (
+class keyboard (
   $model     = 'pc105',
-  $layout    = 'ro',
+  $layout    = 'us',
   $variant   = '',
   $options   = '',
   $backspace = 'guess'
@@ -12,19 +12,22 @@ class keyboard-user-config (
 
   file { '/etc/default/keyboard':
     content => inline_template('# KEYBOARD CONFIGURATION FILE
+
 # Consult the keyboard(5) manual page.
-XKBMODEL="<%= @model %>"
-XKBLAYOUT="<%= @layout %>"
-XKBVARIANT="<%= @variant %>"
-XKBOPTIONS="<%= @options %>"
-BACKSPACE="<%= @backspace %>"
+
+XKBMODEL="<%= model %>"
+XKBLAYOUT="<%= layout %>"
+XKBVARIANT="<%= variant %>"
+XKBOPTIONS="<%= options %>"
+
+BACKSPACE="<%= backspace %>"
 ')
   }
 
-  exec { 'apply-keyboard-configuration':
+  exec { 'apply':
     command     => '/usr/sbin/dpkg-reconfigure -f noninteractive keyboard-configuration',
     subscribe   => File['/etc/default/keyboard'],
-    require     => [ File['/etc/default/keyboard'], Package['keyboard-configuration'], ],
-    refreshonly => true,
+    require     => File['/etc/default/keyboard'],
+    refreshonly => true
   }
 }

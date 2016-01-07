@@ -1,0 +1,22 @@
+{
+  "license": "MIT",
+  "author": "Florian Rey <nervo@nervo.net>",
+  "types": [
+
+  ],
+  "source": "https://github.com/nervo/puppet_keyboard",
+  "project_page": "https://github.com/nervo/puppet_keyboard",
+  "dependencies": [
+
+  ],
+  "description": "Module for configuring keyboard layout",
+  "name": "nervo-keyboard",
+  "checksums": {
+    "Modulefile": "344009585b40df871c937cd5ae24324b",
+    "LICENSE": "b3af58d5a5958ab1478ccee3b3bf6d8f",
+    "manifests/init.pp": "dae64df92f6ee02740364244fb6a1835",
+    "README.md": "1a7d53d85e9ff0ea283167699416e004"
+  },
+  "version": "0.0.1",
+  "summary": "Puppet Keyboard Module"
+}
