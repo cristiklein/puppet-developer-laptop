@@ -11,6 +11,7 @@ class passwordmaker {
  
   file { "${home}/.passwordmaker.rdf":
     ensure => 'present',
+    mode   => 0600,
     source => "puppet:///modules/${module_name}/passwordmaker.rdf.sensitive",
   }
 
