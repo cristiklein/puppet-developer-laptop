@@ -4,7 +4,7 @@
 set -e
 
 # test for puppet
-if dpkg -s puppet > /dev/null; then
+if dpkg -s puppet 2> /dev/null; then
    echo "Puppet already installed"
 else
    echo "Installing puppet ..."
