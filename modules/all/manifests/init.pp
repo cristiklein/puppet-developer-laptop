@@ -4,6 +4,7 @@ class all {
   include base
   include chrome
   include conky
+  include dropbox
   include fish
   include git
   include java
