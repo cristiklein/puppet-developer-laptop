@@ -3,6 +3,16 @@
 # bail out on any error
 set -e
 
+# test for git-crypt
+if dpkg -s git-crypt 2> /dev/null; then
+   echo "git-crypt already installed"
+else
+   echo "Installing git-crypt ..."
+   sudo apt-get -y install git-crypt
+   echo "Decrypting repository ..."
+   git-crypt unlock
+fi
+
 # test for puppet
 if dpkg -s puppet 2> /dev/null; then
    echo "Puppet already installed"
