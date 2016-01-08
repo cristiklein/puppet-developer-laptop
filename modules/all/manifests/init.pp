@@ -5,6 +5,7 @@ class all {
   include chrome
   include conky
   include dropbox
+  include dictionaries
   include fish
   include git
   include iotop
@@ -25,6 +26,7 @@ class all {
   include ssh-user-config
   include terminator
   include thunderbird
+  #include thunderbird-user-config
   include umu-cs-printer-trenter
   include vagrant
   include vim
