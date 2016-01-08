@@ -95,6 +95,11 @@ ${template2 Networking}
 ${template0 wlan0}\
 ${template0 tun0}\
 ${template0 eth0}\
+
+${template2 Top\ IO$alignr\ CPU%\ \ \ MEM%\ \ \ IO%\ \ }
+${color lightgrey} ${top_io name 1} ${top_io cpu 1} $alignr${top_io mem 1} ${top_io io_perc 1}
+${color lightgrey} ${top_io name 2} ${top_io cpu 2} $alignr${top_io mem 2} ${top_io io_perc 2}
+${color lightgrey} ${top_io name 3} ${top_io cpu 3} $alignr${top_io mem 3} ${top_io io_perc 3}
  
 ${template2 Top\ memory$alignr\ CPU%\ \ MEM\ \ \ }
 ${color lightgrey} ${top_mem name 1} $alignr${top_mem cpu 1} ${top_mem mem_res 1}
