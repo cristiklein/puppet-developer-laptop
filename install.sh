@@ -9,9 +9,9 @@ if dpkg -s git-crypt &> /dev/null; then
 else
    echo "Installing git-crypt ..."
    sudo apt-get -y install git-crypt
-   echo "Decrypting repository ..."
-   git-crypt unlock
 fi
+echo "Decrypting repository ..."
+git-crypt unlock
 
 # test for puppet
 if dpkg -s puppet &> /dev/null; then
