@@ -7,6 +7,7 @@ class all {
   include dropbox
   include fish
   include git
+  include iotop
   include java
   include kupfer
   include maven
