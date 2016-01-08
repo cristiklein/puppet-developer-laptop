@@ -26,7 +26,7 @@ class all {
   include ssh-user-config
   include terminator
   include thunderbird
-  #include thunderbird-user-config
+  include thunderbird-user-config
   include umu-cs-printer-trenter
   include vagrant
   include vim
