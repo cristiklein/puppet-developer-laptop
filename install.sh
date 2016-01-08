@@ -4,7 +4,7 @@
 set -e
 
 # test for git-crypt
-if dpkg -s git-crypt 2>&1 > /dev/null; then
+if dpkg -s git-crypt &> /dev/null; then
    echo "git-crypt already installed"
 else
    echo "Installing git-crypt ..."
@@ -14,7 +14,7 @@ else
 fi
 
 # test for puppet
-if dpkg -s puppet 2>&1 > /dev/null; then
+if dpkg -s puppet &> /dev/null; then
    echo "Puppet already installed"
 else
    echo "Installing puppet ..."
