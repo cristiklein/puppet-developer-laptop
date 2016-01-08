@@ -1,34 +1,26 @@
 #!/bin/bash
 
-if [ $# -ne 1 ]; then
-  echo "Missing argument, expected a folder containing customization"
-  exit 1
-fi
-
-CUSTOM_DIR=`pwd`/$1
+REPO_URL=https://github.com/cristiklein/puppet-developer-laptop.git
+WORKDIR=/tmp/$USER/provision
 
 set -e
-set -x
 
-TMP_DIR=/tmp/puppet-developer-laptop-master
-
-if [ -d $TMP_DIR ]; then
-  rm -fR $TMP_DIR
+if dpkg -s git &> /dev/null; then
+	echo "Git already installed"
+else
+	echo "Installing git ..."
+	sudo apt-get install -y git
 fi
 
-mkdir $TMP_DIR  
-cd $TMP_DIR
-
-wget --quiet https://github.com/backuitist/puppet-developer-laptop/archive/master.zip
-unzip -q master.zip
-
-rm -f master.zip
-cd puppet-developer-laptop-master
-
-mkdir -p modules/custom
-eval EXPANDED_DIR=$CUSTOM_DIR/*
-cp -r $EXPANDED_DIR modules/custom
+# setup git repo
+if [ ! -d $WORKDIR ]; then
+	mkdir -p $WORKDIR
+	git clone $REPO_URL $WORKDIR
+	cd $WORKDIR
+else
+	cd $WORKDIR
+	git clean -fdx
+	git pull
+fi
 
 ./install.sh
-
-rm -fR $TMP_DIR
