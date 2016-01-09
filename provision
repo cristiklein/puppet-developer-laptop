@@ -12,6 +12,14 @@ else
 	sudo apt-get install -y git
 fi
 
+# test for git-crypt
+if dpkg -s git-crypt &> /dev/null; then
+	echo "git-crypt already installed"
+else
+	echo "Installing git-crypt ..."
+	sudo apt-get -y install git-crypt
+fi
+
 # setup git repo
 if [ ! -d $WORKDIR ]; then
 	mkdir -p $WORKDIR
@@ -22,5 +30,6 @@ else
 	git clean -fdx
 	git pull
 fi
+git-crypt unlock
 
 ./install.sh
