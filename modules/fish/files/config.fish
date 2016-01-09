@@ -3,7 +3,7 @@ alias gst='git status'
 alias gac='git commit -a -m'
 alias dev='cd ~/development'
 
-set -x PATH $PATH /home/bruno/bin
+set -x PATH $PATH $HOME/bin
 
 function update-repo --description 'Update a single APT repository'
    for source in $argv
