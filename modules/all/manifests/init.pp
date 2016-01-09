@@ -8,6 +8,7 @@ class all {
   include dictionaries
   include fish
   include git
+  include intel-microcode
   include iotop
   include java
   include kupfer
