@@ -4,7 +4,10 @@ class base::packages {
     'ack-grep',
     'curl',
     'htop',
+    'intel-microcode',
+    'iotop',
     'meld',
+    'sqlite3',
     'tree',
     ] :
     ensure => installed,
