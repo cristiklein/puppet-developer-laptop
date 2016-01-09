@@ -1,6 +1,12 @@
 # provide basic packages
 class base::packages {
-  package { ['htop', 'meld', 'curl', 'ack-grep', 'tree'] :
+  package { [
+    'ack-grep',
+    'curl',
+    'htop',
+    'meld',
+    'tree',
+    ] :
     ensure => installed,
   }
 }
