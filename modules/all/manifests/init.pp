@@ -4,6 +4,7 @@ class all {
   include base
   include chrome
   include conky
+  include default-apps-user-config
   include dropbox
   include dictionaries
   include fish
