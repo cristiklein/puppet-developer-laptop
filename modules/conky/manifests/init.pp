@@ -10,7 +10,9 @@ class conky {
   }
   ->
   file { "${home}/.config/autostart":
-    ensure => 'directory'
+    ensure => 'directory',
+    owner  => $real_id,
+    group  => $real_id,
   }
   ->
   file { "${home}/.config/autostart/conky.desktop":
