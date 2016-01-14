@@ -7,6 +7,7 @@ class all {
   include default-apps-user-config
   include dropbox
   include dictionaries
+  include empty-var-crash
   include fish
   include git
   include java
