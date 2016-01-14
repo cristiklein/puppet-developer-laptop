@@ -12,7 +12,7 @@ else
 fi
 
 set -e
-sudo FACTER_install_gitconfig=$gitconfig \
+sudo \
      FACTER_home=$HOME \
      FACTER_real_id=`whoami` \
      puppet apply --modulepath=modules environments/default.pp
