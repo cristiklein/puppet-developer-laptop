@@ -13,6 +13,7 @@ fi
 
 set -e
 sudo \
+     DBUS_SESSION_BUS_ADDRESS=$DBUS_SESSION_BUS_ADDRESS \
      FACTER_home=$HOME \
      FACTER_real_id=`whoami` \
      puppet apply --modulepath=modules environments/default.pp

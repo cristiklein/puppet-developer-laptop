@@ -11,7 +11,7 @@ class default-apps-user-config {
   }
 
   dconf::set { '/com/canonical/unity/launcher/favorites':
-    value => "[
+    value => [
       'application://org.gnome.Nautilus.desktop',
       'application://terminator.desktop',
       'application://google-chrome.desktop',
@@ -23,8 +23,8 @@ class default-apps-user-config {
       'application://unity-control-center.desktop',
       'unity://running-apps',
       'unity://expo-icon',
-      'unity://devices'
-    ]",
+      'unity://devices',
+    ],
     user  => $real_id,
     group => $real_id,
   }
