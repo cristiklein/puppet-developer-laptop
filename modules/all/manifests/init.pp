@@ -3,6 +3,7 @@ class all {
 	
   include base
   include chrome
+  include cloud-experiments
   include conky
   include default-apps-user-config
   include dropbox
