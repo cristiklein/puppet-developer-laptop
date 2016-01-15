@@ -25,6 +25,7 @@ class ssh-user-config {
 
   file { "${home}/.ssh/authorized_keys":
     source => "puppet:///modules/${module_name}/authorized_keys",
+    mode => 0600,
   }
 
 }
