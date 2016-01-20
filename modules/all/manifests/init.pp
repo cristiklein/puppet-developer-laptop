@@ -19,6 +19,7 @@ class all {
   include nvidia-blob
   include nvidia-user-settings
   include passwordmaker
+  include publishing
   include remove-ubuntu-examples
   include scala
   include skype
