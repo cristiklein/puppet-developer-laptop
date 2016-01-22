@@ -10,6 +10,7 @@ class all {
   include dictionaries
   include empty-var-crash
   include fish
+  include gedit-user-config
   include git
   include java
   include kupfer
