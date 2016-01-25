@@ -1,6 +1,6 @@
 class publishing {
   
-  package { ['gimp', 'inkscape']:
+  package { ['gimp', 'inkscape','texlive-full']:
     ensure => 'installed'
   }
 
