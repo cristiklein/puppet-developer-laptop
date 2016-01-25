@@ -4,6 +4,7 @@ class base::packages {
     'ack-grep',
     'curl',
     'htop',
+    'keepassx',
     'intel-microcode',
     'iotop',
     'meld',
