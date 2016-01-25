@@ -1,6 +1,6 @@
 class publishing {
   
-  package { ['gimp', 'inkscape','texlive-full','unoconv']:
+  package { ['gimp', 'inkscape','pdftk','texlive-full','unoconv']:
     ensure => 'installed'
   }
 
