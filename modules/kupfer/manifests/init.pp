@@ -1,15 +1,14 @@
 class kupfer {
 
-  apt::source { 'kupfer-team-ppa-saucy': 
-    location    => 'http://ppa.launchpad.net/kupfer-team/ppa/ubuntu',
-    release     => 'saucy',
-    repos       => 'main',
-    include_src => true,
-    key         => '292F6066',
-    key_server  => 'keyserver.ubuntu.com'
+  apt::source { 'kupfer-team-ubuntu-ppa-wily':
+    ensure => 'absent',
   }
-  ->
+
+  apt::source { 'kupfer-team-ppa-saucy':
+    ensure => 'absent',
+  }
+
   package { 'kupfer' :
-    ensure => 'installed'
+    ensure => 'purged',
   }
 }
