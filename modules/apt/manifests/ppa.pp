@@ -14,7 +14,7 @@ define apt::ppa(
     fail('apt::ppa is not currently supported on Debian.')
   }
 
-  $filename_without_slashes = regsubst($name, '/', '-', 'G')
+  $filename_without_slashes = regsubst($name, '/', '-ubuntu-', 'G')
   $filename_without_dots    = regsubst($filename_without_slashes, '\.', '_', 'G')
   $filename_without_ppa     = regsubst($filename_without_dots, '^ppa:', '', 'G')
   $sources_list_d_filename  = "${filename_without_ppa}-${release}.list"
