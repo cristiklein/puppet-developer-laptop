@@ -4,7 +4,7 @@ class spotify {
     location => 'http://repository.spotify.com',
     release  => 'testing',
     repos    => 'non-free',
-    key      => 'D2C19886',
+    key      => 'BBEBDCB318AD50EC6865090613B00F1FD2C19886',
   } ->
 
   # No clue why libgcrypt is not a dependency
