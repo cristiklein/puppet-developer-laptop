@@ -2,19 +2,7 @@ class fish {
   include apt
   include fish::config
 
-  File {
-    owner => $real_id,
-    group => $real_id
-  }
-
-  apt::source { 'fish-shell-release-2': 
-    location    => 'http://ppa.launchpad.net/fish-shell/release-2/ubuntu',
-    release     => 'trusty',
-    repos       => 'main',
-    include_src => true,
-    key         => '6DC33CA5',
-    key_server  => 'keyserver.ubuntu.com'
-  }
+  apt::ppa { 'ppa:fish-shell/release-2': }
   ->
   package { 'fish' :
     ensure => 'installed'
@@ -27,16 +15,22 @@ class fish {
   }
   ->
   file { "${home}/.config/fish":
-    ensure => 'directory'
+    ensure => 'directory',
+    owner => $real_id,
+    group => $real_id
   }
   ->
   file { "${home}/.config/fish/functions":
-    ensure => 'directory'
+    ensure => 'directory',
+    owner => $real_id,
+    group => $real_id,
   }
   ->
   file { "${home}/.config/fish/functions/fish_prompt.fish":
     ensure  => 'present',
     source  => "puppet:///modules/${module_name}/fish_prompt.fish",
+    owner => $real_id,
+    group => $real_id,
   }
   ->
   file { '/usr/share/fish/functions/fish_default_key_bindings.fish':
