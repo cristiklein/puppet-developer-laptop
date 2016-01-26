@@ -20,7 +20,7 @@ class vim {
   }
 
   vcsrepo { "${home}/.vim":
-    ensure     => 'latest',
+    ensure     => 'present',
     provider   => 'git',
     source     => 'https://github.com/cristiklein/vimrc.git',
     submodules => true,
