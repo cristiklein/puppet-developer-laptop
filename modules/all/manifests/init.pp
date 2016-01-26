@@ -1,11 +1,16 @@
 # includes everything puppet-developer-laptop can provide
 class all {
-	
+
+  class { 'docker':
+    docker_users => [ $real_id ],
+  }
+
   include base
   include chrome
   include cloud-experiments
   include conky
   include default-apps-user-config
+  include docker
   include dropbox
   include dictionaries
   include empty-var-crash
