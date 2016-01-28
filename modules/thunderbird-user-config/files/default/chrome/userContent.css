@@ -1,0 +1,13 @@
+/*
+ * Reduce width of emails.
+ * https://lovetohack.wordpress.com/2014/10/24/improving-wrapping-in-thunderbird/
+ */
+
+body {
+        max-width: 50em;
+}
+
+pre {
+        max-width: 50em;
+        white-space: pre-wrap;
+}

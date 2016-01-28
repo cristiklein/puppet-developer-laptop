@@ -33,6 +33,12 @@ class thunderbird-user-config {
     source => "puppet:///modules/${module_name}/default/prefs.js.sensitive",
   }
 
+  file { "${home}/.thunderbird/default/chrome":
+    ensure  => 'present',
+    source  => "puppet:///modules/${module_name}/default/chrome",
+    recurse => true,
+  }
+
   file { "${home}/.thunderbird/default/extensions":
     ensure  => 'present',
     source  => "puppet:///modules/${module_name}/default/extensions",
