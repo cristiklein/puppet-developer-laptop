@@ -5,6 +5,7 @@ class base::packages {
     'curl',
     'htop',
     'keepassx',
+    'inotify-tools',
     'intel-microcode',
     'iotop',
     'meld',
