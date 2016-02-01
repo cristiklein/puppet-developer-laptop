@@ -1,0 +1,3 @@
+[submodule "modules/dconf"]
+	path = modules/dconf
+	url = https://github.com/cristiklein/puppet-dconf.git
