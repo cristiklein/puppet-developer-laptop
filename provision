@@ -23,7 +23,7 @@ fi
 # setup git repo
 if [ ! -d $WORKDIR ]; then
 	mkdir -p $WORKDIR
-	git clone $REPO_URL $WORKDIR
+	git clone --recursive $REPO_URL $WORKDIR
 	cd $WORKDIR
 else
 	cd $WORKDIR
