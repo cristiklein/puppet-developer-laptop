@@ -10,8 +10,10 @@ class base::packages {
     'intel-microcode',
     'iotop',
     'meld',
+    'pwgen',
     'sqlite3',
     'tree',
+    'uuid',
     ] :
     ensure => installed,
   }
