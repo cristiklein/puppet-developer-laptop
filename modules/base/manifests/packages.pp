@@ -10,6 +10,7 @@ class base::packages {
     'intel-microcode',
     'iotop',
     'meld',
+    'mpack',
     'pwgen',
     'sqlite3',
     'tree',
