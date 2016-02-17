@@ -26,6 +26,7 @@ class all {
   include nvidia-user-settings
   include passwordmaker
   include publishing
+  include python
   include remove-ubuntu-examples
   include scala
   include skype
