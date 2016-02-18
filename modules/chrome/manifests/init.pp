@@ -15,7 +15,8 @@ class chrome {
   }
  
   package { 'google-chrome-stable':
-    ensure => latest,
+    ensure  => latest,
+    require => Class['apt::update'],
   }
  
 }

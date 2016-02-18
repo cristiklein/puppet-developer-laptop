@@ -9,7 +9,8 @@ class spotify {
 
   # No clue why libgcrypt is not a dependency
   package { 'spotify-client': 
-    ensure => 'installed'
+    ensure  => 'installed',
+    require => Class['apt::update'],
   }
 
 }
