@@ -10,4 +10,7 @@ This is how I configure my desktops and laptops after installing a vanilla Ubunt
 
 2. Advanced / Development
 
-  Clone the repository and run `./install.sh`.
+        sudo apt-get install git git-crypt
+        git clone --recursive git@github.com:cristiklein/puppet-developer-laptop.git
+        git-crypt unlock
+        ./install.sh
