@@ -38,6 +38,7 @@ class all {
   include thunderbird
   include thunderbird-user-config
   include umu-cs-printer-trenter
+  include unity-user-config
   include vagrant
   include vim
 }
