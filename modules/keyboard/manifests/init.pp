@@ -30,4 +30,10 @@ BACKSPACE="<%= @backspace %>"
     require     => File['/etc/default/keyboard'],
     refreshonly => true
   }
+
+  dconf::set { '/org/gnome/desktop/input-sources/sources':
+    value => [['dconf::tuple', 'xkb', $layout]],
+    user  => $real_id,
+    group => $real_id,
+  }
 }
