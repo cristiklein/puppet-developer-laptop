@@ -30,6 +30,7 @@ class all {
   include remove-ubuntu-examples
   include scala
   include skype
+  include skype-user-config
   include spotify
   include spotify-user-config
   include ssh-server
