@@ -11,4 +11,11 @@ class publishing {
     ensure => 'installed'
   }
 
+  file { "${home}/.latexmkrc":
+    ensure => present,
+    source => "puppet:///modules/${module_name}/latexmkrc",
+    owner  => $real_id,
+    group  => $real_id,
+  }
+
 }
