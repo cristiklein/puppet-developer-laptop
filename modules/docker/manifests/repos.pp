@@ -29,11 +29,9 @@ class docker::repos {
           location          => $location,
           release           => $docker::package_release,
           repos             => $docker::package_repos,
-          key               => $package_key,
-          key_source        => $key_source,
-          required_packages => 'debian-keyring debian-archive-keyring',
+          key               => { id => $package_key, source => $key_source },
           pin               => '10',
-          include_src       => false,
+          include           => { src => false },
         }
         if $docker::manage_package {
           Apt::Source['docker'] -> Package['docker']
