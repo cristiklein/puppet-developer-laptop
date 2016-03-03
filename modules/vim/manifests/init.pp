@@ -26,7 +26,15 @@ class vim {
     submodules => true,
     depth      => 1,
     user       => $real_id,
-    require    => File["${home}/.ssh/id_rsa"],
+    notify     => Exec['set-push-url'],
+  }
+
+  exec { 'set-push-url':
+    cwd         => "${home}/.vim",
+    command     => 'git remote set-url --push origin git@github.com:cristiklein/vimrc.git',
+    path        => '/usr/bin',
+    refreshonly => true,
+    user        => $real_id,
   }
 
   file { "${home}/.vimrc":
