@@ -17,6 +17,7 @@ class all {
   include fish
   include gedit-user-config
   include git
+  include indicator-multiload
   include java
   include kupfer
   include maven
