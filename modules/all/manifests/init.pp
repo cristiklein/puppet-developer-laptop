@@ -28,6 +28,7 @@ class all {
   include passwordmaker
   include publishing
   include python
+  include r
   include remove-ubuntu-examples
   include scala
   include skype
