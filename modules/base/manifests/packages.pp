@@ -12,6 +12,7 @@ class base::packages {
     'libtext-markdown-perl',
     'meld',
     'mpack',
+    'pv',
     'pwgen',
     'sqlite3',
     'tree',
