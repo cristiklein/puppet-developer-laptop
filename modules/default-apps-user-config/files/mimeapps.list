@@ -14,3 +14,4 @@ application/xhtml_xml=google-chrome.desktop;
 image/webp=google-chrome.desktop;
 x-scheme-handler/https=google-chrome.desktop;
 x-scheme-handler/ftp=google-chrome.desktop;
+text/x-tex=gedit.desktop;
