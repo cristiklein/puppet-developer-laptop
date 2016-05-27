@@ -9,6 +9,7 @@ class base::packages {
     'inotify-tools',
     'intel-microcode',
     'iotop',
+    'iperf',
     'libtext-markdown-perl',
     'meld',
     'mpack',
