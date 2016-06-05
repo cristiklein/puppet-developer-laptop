@@ -32,12 +32,4 @@ class fish {
     owner => $real_id,
     group => $real_id,
   }
-  ->
-  file { '/usr/share/fish/functions/fish_default_key_bindings.fish':
-    ensure => present,
-    source  => "puppet:///modules/${module_name}/default_key_bindings.fish",
-    owner => 'root',
-    group => 'root',
-    mode  => '0644'
-  }
 }
