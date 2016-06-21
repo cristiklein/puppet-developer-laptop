@@ -3,6 +3,7 @@ class base::packages {
   package { [
     'ack-grep',
     'curl',
+    'heimdal-clients',
     'htop',
     'keepassx',
     'hwloc',
