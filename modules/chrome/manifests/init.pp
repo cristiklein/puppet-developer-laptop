@@ -10,6 +10,7 @@ class chrome {
     location          => 'http://dl.google.com/linux/chrome/deb/',
     release           => 'stable',
     repos             => 'main',
+    architecture      => 'amd64',
     include           => { src => false },
     notify            => Package ['google-chrome-stable'],
   }
