@@ -4,6 +4,7 @@ class base::packages {
     'ack-grep',
     'cscope',
     'curl',
+    'exuberant-ctags',
     'heimdal-clients',
     'htop',
     'keepassx',
