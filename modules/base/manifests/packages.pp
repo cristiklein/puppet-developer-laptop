@@ -2,6 +2,7 @@
 class base::packages {
   package { [
     'ack-grep',
+    'cscope',
     'curl',
     'heimdal-clients',
     'htop',
