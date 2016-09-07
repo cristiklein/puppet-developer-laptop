@@ -14,7 +14,9 @@
   [[default]]
     background_darkness = 0.84
     scrollback_lines = 10000
+    scroll_on_output = False
     background_image = None
+    scrollback_infinite = True
 [layouts]
   [[default]]
     [[[child1]]]
