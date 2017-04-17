@@ -8,6 +8,6 @@ class base::tmp_on_tmpfs {
     atboot      => true,
     device      => 'tmpfs',
     fstype      => 'tmpfs',
-    options     => 'defaults,noatime,size=10%,mode=1777'
+    options     => 'defaults,noatime,size=25%,mode=1777'
   }
 }
