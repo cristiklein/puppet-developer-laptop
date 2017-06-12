@@ -11,6 +11,7 @@ class all {
   include conky
   include default-apps-user-config
   include docker
+  include dropbear
   include dropbox
   include dictionaries
   include empty-var-crash
