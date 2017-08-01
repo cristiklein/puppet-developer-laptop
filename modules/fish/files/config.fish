@@ -6,7 +6,7 @@ alias dev='cd ~/development'
 set -x PATH $PATH $HOME/bin
 
 # Add path to RubyGems executables
-if which ruby >/dev/null; and which gem >/dev/null
+if which ruby >/dev/null; and which gem >/dev/null; then
    set -x PATH (ruby -rubygems -e 'puts Gem.user_dir')/bin $PATH
 end
 
