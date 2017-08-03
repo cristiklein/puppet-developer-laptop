@@ -24,6 +24,7 @@ class all {
   include maven
   include mc
   include mouse-user-config
+  include mplayer-user-config
   include nvidia-blob
   include nvidia-user-settings
   include passwordmaker
