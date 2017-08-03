@@ -1,3 +1,5 @@
+# This file is managed by Puppet. All changes will be overwritten.
+
 [user]
 	email = cristiklein@gmail.com
 	name = Cristian Klein

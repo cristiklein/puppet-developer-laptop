@@ -1,4 +1,6 @@
 #!/bin/sh
+#
+# This file is managed by Puppet. All changes will be overwritten.
 
 # Make mouse a bit slower
 xinput --set-prop "Microsoft Sculpt Comfort Mouse" "Device Accel Velocity Scaling" 5 2>/dev/null

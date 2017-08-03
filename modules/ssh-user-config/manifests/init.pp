@@ -28,4 +28,8 @@ class ssh-user-config {
     mode => 0600,
   }
 
+  file { "${home}/.ssh/MANAGED-BY-PUPPET":
+    source => "puppet:///modules/${module_name}/MANAGED-BY-PUPPET",
+  }
+
 }

@@ -1,3 +1,5 @@
+# This file is managed by Puppet. All changes will be overwritten.
+
 set -g __fish_git_prompt_show_informative_status 1
 set -g __fish_git_prompt_hide_untrackedfiles 1
 set -g __fish_git_prompt_color_branch --bold magenta 

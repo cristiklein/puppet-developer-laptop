@@ -1,2 +1,4 @@
+# This file is managed by Puppet. All changes will be overwritten.
+
 $pdf_previewer = "start evince";
 $pdf_update_method = 0;

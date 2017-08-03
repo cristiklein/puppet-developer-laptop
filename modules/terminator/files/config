@@ -1,3 +1,4 @@
+# This file is managed by Puppet. All changes will be overwritten.
 [global_config]
 [keybindings]
   switch_to_tab_10 = <Alt>0

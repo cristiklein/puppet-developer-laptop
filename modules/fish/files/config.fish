@@ -1,3 +1,5 @@
+# This file is managed by Puppet. All changes will be overwritten.
+
 alias l='ls -al'
 alias gst='git status'
 alias gac='git commit -a -m'
