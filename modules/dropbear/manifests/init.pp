@@ -4,10 +4,14 @@ class dropbear {
     ensure => 'installed'
   }
 
-  file { "/etc/initramfs-tools/root/.ssh/":
+  file { "/etc/initramfs-tools/root/":
     ensure => 'directory',
   }
 
+  file { "/etc/initramfs-tools/root/.ssh/":
+    ensure => 'directory',
+  }
+  
   file { "/etc/initramfs-tools/root/.ssh/authorized_keys":
     ensure => 'present',
     source => "puppet:///modules/${module_name}/authorized_keys",
