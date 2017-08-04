@@ -6,6 +6,6 @@ class vagrant {
              'virtualbox-dkms',
              'virtualbox-qt']:
              
-	  ensure => 'present'
+	  ensure => 'purged'
   }
 }
