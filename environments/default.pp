@@ -5,6 +5,10 @@ node default {
     layout  => 'ro',
   }
 
+  class { 'nvidia':
+    version => 381,
+  }
+
   class {'timezone':
     timezone => 'Europe/Stockholm',
   }

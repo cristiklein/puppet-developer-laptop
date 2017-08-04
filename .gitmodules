@@ -1,3 +1,6 @@
 [submodule "modules/dconf"]
 	path = modules/dconf
 	url = https://github.com/cristiklein/puppet-dconf.git
+[submodule "modules/nvidia"]
+	path = modules/nvidia
+	url = https://github.com/cristiklein/puppet-nvidia.git

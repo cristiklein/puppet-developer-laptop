@@ -25,7 +25,6 @@ class all {
   include mc
   include mouse-user-config
   include mplayer-user-config
-  include nvidia-blob
   include nvidia-user-settings
   include passwordmaker
   include publishing
