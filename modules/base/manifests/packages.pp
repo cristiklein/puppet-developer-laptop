@@ -18,6 +18,7 @@ class base::packages {
     'mpack',
     'pv',
     'pwgen',
+    'sloccount',
     'sqlite3',
     'tree',
     'uuid',
