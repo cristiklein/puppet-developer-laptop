@@ -1,11 +1,15 @@
 class skype {
-  apt::source { 'canonical-partner':
-    location => 'http://archive.canonical.com/ubuntu',
-    repos    => 'partner',
-  } ->
-
   package { ['skype']: 
+    ensure => 'purged'
+  }
+
+  package { ['skypeforlinux']: 
     ensure => 'installed'
   }
 
+  file { "${home}/.Skype":
+    ensure  => 'absent',
+    recurse => true,
+    force   => true,
+  }
 }

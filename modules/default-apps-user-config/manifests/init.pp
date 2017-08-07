@@ -16,7 +16,7 @@ class default-apps-user-config {
       'application://terminator.desktop',
       'application://google-chrome.desktop',
       'application://thunderbird.desktop',
-      'application://skype.desktop',
+      'application://skypeforlinux.desktop',
       'application://libreoffice-writer.desktop',
       'application://libreoffice-calc.desktop',
       'application://libreoffice-impress.desktop',
