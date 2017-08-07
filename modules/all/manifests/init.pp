@@ -7,6 +7,7 @@ class all {
 
   include base
   include chrome
+  include cleanup
   include cloud-experiments
   include conky
   include default-apps-user-config
@@ -14,7 +15,6 @@ class all {
   include dropbear
   include dropbox
   include dictionaries
-  include empty-var-crash
   include fish
   include gedit-user-config
   include git
