@@ -25,4 +25,10 @@ class base::packages {
     ] :
     ensure => installed,
   }
+
+  package { [
+    'xbrlapi',
+    ] :
+    ensure => purged,
+  }
 }

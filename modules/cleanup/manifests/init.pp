@@ -6,10 +6,18 @@ class cleanup {
     recurse => true,
   }
 
-  exec { 'purge old kernels':
-    provider => 'shell',
-    command  => "dpkg-query -f='\${Package}\n' --show 'linux-image-*' 'linux-headers-*'| grep -v $(uname -r | egrep -o '[0-9.]+-[0-9]+') | xargs sudo dpkg --purge",
-    onlyif   => "test $(dpkg-query -f='\${Version} \${Package}\n' --show 'linux-image-*' 'linux-headers-*' | grep -v '^ ' | grep -v $(uname -r | egrep -o '[0- 9.]+-[0-9]+') | wc -l) -gt 2",
+  schedule { 'daily_cleanup':
+    period => 'daily',
   }
 
+  exec { 'purge old kernels':
+    schedule => 'daily_cleanup',
+    provider => 'shell',
+    command  => "dpkg-query -f='\${Package}\n' --show 'linux-image-*' 'linux-headers-*'| grep -v $(uname -r | egrep -o '[0-9.]+-[0-9]+') | xargs sudo dpkg --purge",
+  }
+  ->
+  exec { 'apt autoremove':
+    schedule => 'daily_cleanup',
+    command => '/usr/bin/apt autoremove --purge -y',
+  }
 }
