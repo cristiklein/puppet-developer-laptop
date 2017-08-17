@@ -42,5 +42,6 @@ class all {
   include umu-cs-printer-trenter
   include unity-user-config
   include vagrant
+  include video-editing
   include vim
 }
